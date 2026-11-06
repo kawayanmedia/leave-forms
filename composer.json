@@ -1,0 +1,40 @@
+{
+    "name": "kawayanmedia/leave-forms",
+    "description": "Framework-agnostic Service Record, leave certification, leave application, CTO, money value and retirement schedule PDFs",
+    "version": "0.1.0",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "service-record",
+        "leave",
+        "cto",
+        "retirement",
+        "pdf",
+        "hr"
+    ],
+    "require": {
+        "kawayanmedia/persistence": "^0.1",
+        "php": "^8.2",
+        "setasign/fpdf": "^1.9",
+        "setasign/fpdi": "^2.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "KawayanMedia\\LeaveForms\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KawayanMedia\\LeaveForms\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
