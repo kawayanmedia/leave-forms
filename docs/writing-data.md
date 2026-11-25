@@ -115,7 +115,10 @@ a non-manager filing produced an already active row.
 | `dtr` | `dtr` | `employee_id`, `office_id`, `log_date`, `am_login`, `am_logout`, `pm_login`, `pm_logout` |
 
 `Config\LeaveTables` maps datasets to tables and can be overridden. The package
-never creates tables.
+ships its migrations in `database/migrations`; Laravel runs them through the
+registered service provider, so run `php artisan migrate` after installing.
+Hosts that already own these tables can map `LeaveTables` at their own names
+and skip the package migrations.
 
 ## Custom persistence
 
